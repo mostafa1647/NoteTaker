@@ -1,0 +1,14 @@
+section.add-note-sec {
+  background-color: #ecf0f1;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px 0 #b8b8b8;
+}
+section.add-note-sec .title {
+  padding: 0 0 10px 0;
+  color: #212529;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=AddNote.css.map */

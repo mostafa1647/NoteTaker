@@ -1,0 +1,75 @@
+@import "../../styles/vars";
+
+section.notes-list {
+    ul {
+        li {
+            margin: 30px auto;
+            .card {
+                background-color: $grey;
+                padding: 15px;
+                border-radius: $borderRadius;
+                box-shadow: $boxShadow;
+                color: $fontColor;
+                position: relative;
+                .title {
+                    font-weight: 500;
+                    font-size: 1.2em;
+                    text-transform: uppercase;
+                    padding: 5px 0 15px;
+                }
+                .text {
+                    font-size: 1em;
+                    font-weight: 500;
+                    line-height: 2;
+                    text-align: justify;
+                }
+                .button-sec {
+                    position: absolute;
+                    top: 15px;
+                    right: 15px;
+                    @include max-576 {
+                        position: unset;
+                    }
+                    button {
+                        background-color: transparent;
+                        border: none;
+                        padding: 5px;
+                        transition: $transition;
+                        .icon {
+                            svg {
+                                width: 20px;
+                                transition: $transition;
+                            }
+                            &.delete-note {
+                                svg {
+                                    color: #e93b3b;
+                                }
+                            }
+                            &.edit-note {
+                                svg {
+                                    color: $fontColor;
+                                    width: 23px;
+                                }
+                            }
+                        }
+                        &:hover {
+                            cursor: pointer;
+                            .icon {
+                                &.delete-note {
+                                    svg {
+                                        color: #FF0000;
+                                    }
+                                }
+                                &.edit-note {
+                                    svg {
+                                        color: $darkBlueHover;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

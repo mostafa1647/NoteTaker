@@ -1,0 +1,27 @@
+@import "../../styles/vars";
+
+.header-container {
+    background-color: $darkBlue;
+    padding: 1rem;
+    header {
+        @include flex(row, flex-start, baseline);
+        h1 {
+            padding: 0 0.8rem;
+            a {
+                color: $white;
+                font-size: 1.6rem;
+                font-weight: 500;
+            }
+        }
+        ul {
+            @include flex(row, flex-start, center);
+            li {
+                padding: 0 0.3rem;
+                a {
+                    color: $white;
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,61 @@
+section.notes-list ul li {
+  margin: 30px auto;
+}
+section.notes-list ul li .card {
+  background-color: #ecf0f1;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px 0 #b8b8b8;
+  color: #212529;
+  position: relative;
+}
+section.notes-list ul li .card .title {
+  font-weight: 500;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  padding: 5px 0 15px;
+}
+section.notes-list ul li .card .text {
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 2;
+  text-align: justify;
+}
+section.notes-list ul li .card .button-sec {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+@media screen and (max-width: 576px) {
+  section.notes-list ul li .card .button-sec {
+    position: unset;
+  }
+}
+section.notes-list ul li .card .button-sec button {
+  background-color: transparent;
+  border: none;
+  padding: 5px;
+  transition: all 0.3s ease;
+}
+section.notes-list ul li .card .button-sec button .icon svg {
+  width: 20px;
+  transition: all 0.3s ease;
+}
+section.notes-list ul li .card .button-sec button .icon.delete-note svg {
+  color: #e93b3b;
+}
+section.notes-list ul li .card .button-sec button .icon.edit-note svg {
+  color: #212529;
+  width: 23px;
+}
+section.notes-list ul li .card .button-sec button:hover {
+  cursor: pointer;
+}
+section.notes-list ul li .card .button-sec button:hover .icon.delete-note svg {
+  color: #FF0000;
+}
+section.notes-list ul li .card .button-sec button:hover .icon.edit-note svg {
+  color: #1e2b37;
+}
+
+/*# sourceMappingURL=NoteSummary.css.map */

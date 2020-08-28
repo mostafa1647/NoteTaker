@@ -1,0 +1,14 @@
+@import "../../styles/vars";
+
+section.add-note-sec {
+    background-color: $grey;
+    padding: 20px;
+    border-radius: $borderRadius;
+    box-shadow: $boxShadow;
+    .title {
+        padding: 0 0 10px 0;
+        color: $fontColor;
+        font-size: 1.2em;
+        font-weight: 500;
+    }
+}

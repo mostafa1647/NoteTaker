@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+input:focus, select:focus, button:focus, textarea:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: calc(100% - 32px);
+  }
+}
+
+a.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 5px 5px 5px 5px;
+  border: none;
+  font-size: 1.171875rem;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #2C3E50;
+  transition: all 0.3s ease;
+}
+a.btn:hover {
+  background-color: #1e2b37;
+}
+
+.info-sec {
+  background-color: #ecf0f1;
+  border-radius: 5px 5px 5px 5px;
+  margin-top: 80px;
+  padding: 4rem 3rem;
+}
+
+.margin-top80 {
+  margin-top: 80px;
+}
+@media screen and (max-width: 576px) {
+  .margin-top80 {
+    margin-top: 40px;
+  }
+}
+
+.margin-top40 {
+  margin-top: 40px;
+}
+
+form.add-note input, form.add-note textarea, form.add-note button {
+  border: 2px solid #2C3E50;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  font-family: sans-serif;
+  background-color: transparent;
+  padding: 10px;
+  font-size: 1em;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+form.add-note input:hover, form.add-note input:focus, form.add-note textarea:hover, form.add-note textarea:focus, form.add-note button:hover, form.add-note button:focus {
+  border-color: #1e2b37;
+}
+form.add-note textarea {
+  resize: vertical;
+  min-height: 200px;
+}
+form.add-note .btn-sec {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: center;
+}
+@media screen and (max-width: 400px) {
+  form.add-note .btn-sec {
+    justify-content: center;
+  }
+}
+form.add-note .btn-sec > input, form.add-note .btn-sec button {
+  width: auto;
+  padding: 10px 40px;
+  margin: 0 5px;
+}
+@media screen and (max-width: 400px) {
+  form.add-note .btn-sec > input, form.add-note .btn-sec button {
+    padding: 10px 20px;
+  }
+}
+form.add-note .btn-sec > input[type=submit], form.add-note .btn-sec > input[type=submit], form.add-note .btn-sec button[type=submit], form.add-note .btn-sec button[type=submit] {
+  background-color: #2C3E50;
+  color: #fff;
+  margin-right: 0;
+}
+form.add-note .btn-sec > input[type=submit]:hover, form.add-note .btn-sec > input[type=submit]:focus, form.add-note .btn-sec > input[type=submit]:hover, form.add-note .btn-sec > input[type=submit]:focus, form.add-note .btn-sec button[type=submit]:hover, form.add-note .btn-sec button[type=submit]:focus, form.add-note .btn-sec button[type=submit]:hover, form.add-note .btn-sec button[type=submit]:focus {
+  background-color: #1e2b37;
+  border-color: #1e2b37;
+}
+form.add-note .btn-sec > input[type=reset], form.add-note .btn-sec > input[type=cancel], form.add-note .btn-sec button[type=reset], form.add-note .btn-sec button[type=cancel] {
+  color: #212529;
+}
+form.add-note .btn-sec > input[type=reset]:hover, form.add-note .btn-sec > input[type=cancel]:hover, form.add-note .btn-sec button[type=reset]:hover, form.add-note .btn-sec button[type=cancel]:hover {
+  background-color: #1e2b37;
+  border-color: #1e2b37;
+  color: #ffffff;
+}
+
+.add-note-link {
+  background-color: #2C3E50;
+  border-radius: 5px;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  font-weight: 500;
+  box-shadow: 0 4px 10px 0 #b8b8b8;
+  transition: all 0.3s ease;
+}
+.add-note-link:hover {
+  background-color: #1e2b37;
+}
+
+/*# sourceMappingURL=index.css.map */

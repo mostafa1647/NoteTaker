@@ -1,0 +1,48 @@
+$greenColor: #18BC9C;
+$fontColor: #212529;
+$darkBlue: #2C3E50;
+$darkBlueHover: #1e2b37;
+$white: #fff;
+$grey: #ecf0f1;
+
+
+$borderRadius: 5px;
+$boxShadow: 0 4px 10px 0 #b8b8b8;
+$transition: all 0.3s ease;
+
+@mixin flex($dir: row, $jus: center, $al: center) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $jus;
+    align-items: $al;
+}
+
+@mixin max-1200 {
+    @media screen and (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin max-992 {
+    @media screen and (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin max-768 {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin max-576 {
+    @media screen and (max-width: 576px) {
+        @content;
+    }
+}
+
+@mixin max-400 {
+    @media screen and (max-width: 400px) {
+        @content;
+    }
+}

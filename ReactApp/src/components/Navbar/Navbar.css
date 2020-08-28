@@ -1,0 +1,33 @@
+.header-container {
+  background-color: #2C3E50;
+  padding: 1rem;
+}
+.header-container header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+.header-container header h1 {
+  padding: 0 0.8rem;
+}
+.header-container header h1 a {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.header-container header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.header-container header ul li {
+  padding: 0 0.3rem;
+}
+.header-container header ul li a {
+  color: #fff;
+  font-size: 1.2em;
+}
+
+/*# sourceMappingURL=Navbar.css.map */

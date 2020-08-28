@@ -1,0 +1,41 @@
+.home-component .info-sec {
+  text-align: center;
+}
+.home-component .info-sec h1 {
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #212529;
+}
+@media screen and (max-width: 576px) {
+  .home-component .info-sec h1 {
+    font-size: 2rem;
+  }
+}
+.home-component .info-sec h1 .icon {
+  padding: 0 10px;
+}
+.home-component .info-sec h1 .icon svg {
+  color: #212529;
+  width: 30px;
+}
+@media screen and (max-width: 576px) {
+  .home-component .info-sec h1 .icon svg {
+    width: 18px;
+  }
+}
+.home-component .info-sec h4 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin: 0.5rem auto;
+}
+@media screen and (max-width: 576px) {
+  .home-component .info-sec h4 {
+    font-size: 1.1rem;
+  }
+}
+.home-component .info-sec .btn {
+  margin-top: 0.5rem;
+}
+
+/*# sourceMappingURL=Home.css.map */
