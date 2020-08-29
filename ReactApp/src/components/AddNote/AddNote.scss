@@ -5,6 +5,7 @@ section.add-note-sec {
     padding: 20px;
     border-radius: $borderRadius;
     box-shadow: $boxShadow;
+    position: relative;
     .title {
         padding: 0 0 10px 0;
         color: $fontColor;

@@ -4,6 +4,7 @@ import NoteSummary from "../NoteSummary/NoteSummary";
 import axios from 'axios';
 import EditNote from "../EditNote/EditNote";
 import {Link} from "react-router-dom";
+import loadingIcon from "../../assets/svg/Dual Ring-1s-200px.svg";
 
 const getNotes = async () => {
     try {
@@ -25,7 +26,9 @@ const Notes = () => {
             )}
             {status === 'loading' && (
                 <div className="container margin-top40">
-                    <div className="loading">Loading notes ...</div>
+                    <div className="loading">
+                        <img src={loadingIcon} alt="loading icon"/>
+                    </div>
                 </div>
             )}
             {status === 'success' && (

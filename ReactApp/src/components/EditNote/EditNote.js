@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import axios from "axios";
 import {queryCache} from "react-query";
+import loadingIcon from "../../assets/svg/Dual Ring-1s-200px.svg";
 
 const EditNote = ({title, text, _id, setEditRequiredNote}) => {
     const [_title, set_title] = useState(title);
@@ -13,6 +14,9 @@ const EditNote = ({title, text, _id, setEditRequiredNote}) => {
     }
     const handleSubmit = async e => {
         e.preventDefault();
+        document.querySelector("button[type=submit]").disabled = true;
+        document.querySelector(".loading").classList.remove("d-none");
+        document.querySelector(".edit-sec").style.opacity = 0.3;
         try {
             await axios.put(`https://boiling-basin-70629.herokuapp.com/api/notes/${_id}`, {
                 title: _title,
@@ -30,11 +34,14 @@ const EditNote = ({title, text, _id, setEditRequiredNote}) => {
     return (
         <li>
             <div className="card">
+                <div className="loading d-none">
+                    <img src={loadingIcon} alt="loading icon"/>
+                </div>
                 <div className='edit-sec'>
                     <h4 className="title">Edit Note</h4>
                     <form className="add-note" method="post" onSubmit={handleSubmit}>
-                        <input type="text" name="title" id="titleEdit" placeholder="Title" value={_title} onChange={handle_titleChange}/>
-                        <textarea name="text" id="text" placeholder="Text" value={_text} onChange={handle_textChange}></textarea>
+                        <input type="text" name="title" id="titleEdit" placeholder="Title" value={_title} onChange={handle_titleChange} required={true} />
+                        <textarea name="text" id="text" placeholder="Text" value={_text} onChange={handle_textChange} required={true} ></textarea>
                         <div className="btn-sec">
                             <button type="submit">Submit</button>
                             <button type='cancel' onClick={() => setEditRequiredNote(null)}>Cancel</button>

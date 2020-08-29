@@ -3,6 +3,7 @@ section.add-note-sec {
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 4px 10px 0 #b8b8b8;
+  position: relative;
 }
 section.add-note-sec .title {
   padding: 0 0 10px 0;

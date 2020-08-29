@@ -154,4 +154,17 @@ form.add-note .btn-sec > input[type=reset]:hover, form.add-note .btn-sec > input
   background-color: #1e2b37;
 }
 
+.loading img {
+  width: 70px;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  z-index: 10;
+}
+
+.d-none {
+  display: none;
+}
+
 /*# sourceMappingURL=index.css.map */

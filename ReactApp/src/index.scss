@@ -127,3 +127,18 @@ form.add-note {
         background-color: $darkBlueHover;
     }
 }
+
+.loading {
+    img {
+        width: 70px;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+        z-index: 10;
+    }
+}
+
+.d-none {
+    display: none;
+}
